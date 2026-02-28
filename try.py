@@ -6,11 +6,3 @@ if first + last == "Seif Amr":
 else:
     print (False)
 
-def enter():
-    entery = input("enter your name: ")
-    if entery == first + last:
-        print (True)
-    else:
-        print (False)
-        
-enter()
