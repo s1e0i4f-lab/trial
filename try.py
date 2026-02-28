@@ -1,18 +1,18 @@
 first = "Seif "
 last = "Amr"
 print(first + last)
-if first + last == "Seif Amr":
-    print(True)
-else:
-    print (False)
 
 def enter():
-    entery = input("enter your name: ")
-    if entery == first + last:
-        print (True)
-    else:
-        print (False)
-        
+    correct_name = (first + last).strip().lower()
+    
+    entery = input("Enter your name: ").strip().lower()
+    
+    while entery != correct_name:
+        print("...Entrance denied. Try again")
+        entery = input("Enter your name: ").strip().lower()
+    
+    print("...Entrance allowed " + correct_name)
+
 enter()
 
 
