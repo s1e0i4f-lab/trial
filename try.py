@@ -14,3 +14,15 @@ def enter():
         print (False)
         
 enter()
+
+
+def check_enter():
+    gmail = input("Enter your gmail: ")
+    
+    while not gmail.endswith("@gmail.com"):
+        print("...Access Denied. Try again.\n")
+        gmail = input("Enter your gmail: ")
+    
+    print("...Access Allowed")
+
+check_enter()
