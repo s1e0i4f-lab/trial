@@ -1,11 +1,14 @@
 # checker 1
 def checker():
     check = input("Enter you name: ").strip().lower()
-    while True:
-        print("Access allowed")
+    while check != str:
+        print("Access not allowed...Try Again!")
+        check = input("Enter you name: ").strip().lower()
         break
+    print("Access allowed")
 
 checker()
+
 
 #Question game 2
 def game():
@@ -43,3 +46,23 @@ def game():
     print("Great job...you win!")
 
 game()
+
+
+#Calculation 3
+def calculate():
+    number = int(input("Enter a number: "))
+    for i in range(1, 13):
+        print(number, "x", i, "=", number * i)
+        
+calculate()
+
+
+#password checker 4
+def password_check():
+    password = input("Enter your password: ")
+    while not len(password) >= 8:
+        print("Can't enter less than 8 numbers...Enter again")
+        password = int(input("Enter your password again: "))
+    print("Confirmed")
+
+password_check()
