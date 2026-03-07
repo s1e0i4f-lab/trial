@@ -57,7 +57,7 @@ def calculate():
 calculate()
 
 
-#password checker 4
+#password length checker 4
 def password_check():
     password = input("Enter your password: ")
     while not len(password) >= 8:
